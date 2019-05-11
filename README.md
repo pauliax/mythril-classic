@@ -56,3 +56,15 @@ This will create a `build` output directory containing the HTML output. Alternat
 ## Vulnerability Remediation
 
 Visit the [Smart Contract Vulnerability Classification Registry](https://smartcontractsecurity.github.io/SWC-registry/) to find detailed information and remediation guidance for the vulnerabilities reported.
+
+## Generation of test input (demo)
+
+Test input generator is a new module that generates transactions with inputs that trigger the execution of different paths of smart contract. This module is still in development and is not reliable with large scale smart contracts. 
+
+Run this module:
+
+```bash
+./myth -v 4 -xo jsonv2 <PATH_TO_THE_SMART_CONTRACT> -m test_input_generator
+```
+
+You will see the information what opcodes were found during the execution. Generated transactions with some additional information is written to the file txs.json which can be found in the same directory that you run this command from.
