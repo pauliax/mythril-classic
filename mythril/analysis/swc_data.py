@@ -28,6 +28,7 @@ INCORRECT_INHERITANCE_ORDER = "125"
 ARBITRARY_JUMP = "127"
 DOS_WITH_BLOCK_GAS_LIMIT = "128"
 TYPOGRAPHICAL_ERROR = "129"
+TEST_INPUT_GENERATOR = "130"
 
 
 SWC_TO_TITLE = {
@@ -60,4 +61,5 @@ SWC_TO_TITLE = {
     "127": "Arbitrary Jump with Function Type Variable",
     "128": "DoS With Block Gas Limit",
     "129": "Typographical Error",
+    "130": "Test Input Generator",
 }
